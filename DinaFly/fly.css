@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+
+}
+body{
+    height: 300vh;
+    width: 100vw;
+    background-image: url(https://t3.ftcdn.net/jpg/04/15/87/76/360_F_415877698_c1VY6BMnUbNxh7Or80VDZAWng4UoGfWi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(230, 14, 14);
+
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+a{
+    margin-right: 200px;
+    color: rgb(174, 248, 249);
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    color: rgb(104, 104, 104);
+
+}
+.container{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    background-color: rgb(174, 248, 249);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); /* 3 columns in each row */
+    gap: 0px 0px; /* Adjust the gap between items as needed */
+    height: 200vh;
+    width: 100vw;
+    justify-content: space-around; 
+    align-content: space-around; 
+
+}
+
+.ticket {
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 5px;
+    height: 350px; /* Fixed height for the ticket div */
+    width: 450px; /* Fixed width for the ticket div */
+  color: #f2f2f2;
+}
+.con{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 100px;
+    width:450px;
+
+}
+.con1{
+height: 80px;
+width: 200px;
+display: flex;
+flex-direction: column;
+justify-content: end;
+align-items: start;
+background-color: red;
+}
+.con2{
+    height: 80px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: aqua;
+}
+.price{
+    color: rgb(43, 43, 43);
+}
+h4{
+  color: rgb(43, 43, 43);
+  position: relative;
+  top: 20px;
+  
+}
+
+/*
+.ticket {
+    text-align: center;
+    border-radius: 5px;
+    height: 300px;  
+    width: 450px;  
+  color: #f2f2f2;
+}
+.con{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+.con1{
+height: 100px;
+width: 100px;
+display: flex;
+flex-direction: column;
+justify-content: end;
+}
+.con2{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: end;
+}
+/*
+
+
