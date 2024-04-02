@@ -3,54 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="fly.css">
 
 </head>
 <body>
+    <?php
+    if(isset($_GET['Istanbul'])){
+        header('Location: istanbul.php');
+        exit;
+    }
+    ?>
+ 
     <header>
-        <img src="logo.png" height="150px" width="150px";>
+        <img src="logo.png" height="150px" width="150px">
         <div class="links">
         <a href="#">Home</a>
         <a href="#">Tours Page</a>
         <a href="#">News</a>
         <a href="#">Contact</a>
+        <span class="span1">Dina Dehbi</span>
+        <img src="user.svg" class="user">
         </div>
     </header>
-    <div class="container">
-    <div class="div1">
-      <h1> Discover the best offers at this moment</h1>
-      </div>
-      </div>
+   
     <section class="section1">
-        <div class="ticket">
-            <img src="https://a.cdn-hotels.com/gdcs/production6/d781/3bae040b-2afb-4b11-9542-859eeb8ebaf1.jpg" height="200px" width="100%">
-            <h4>Istanbul</h4><br>
-
-            <div class="con">
-
-
-            <div class="con1">
-            <p>02 avr.</p>
-            <p>LYS
-            <img src="plane-solid.svg" height="20px" width="20px">
-            IST
-            </p>
-            </div>
-            <div class="con2">
-                <p>a partir de <h1 class="price">93$</h1></p>
-            </div>
-            </div>
-        </div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
-        <div class="ticket"></div>
         
+       <form action="index.php">
+        <div class="para">
+        <h1>Pemium meilleures offre </h1>
+        <img src="offre2.png" class="offre">
+        </div>
+     
+        <div class="con1">
+        <button class="ticket" type="submit" name="Istanbul">
+
+            <img src="https://media.timeout.com/images/105859738/750/422/image.jpg" class="images" alt="Istanbul Image">
+               <h2 class="h2">Istanbul</h2>
+            <div class="con2">
+                <div class="div2">
+                    <p class="paragraph">2 April - 10 April</p>
+                    <p class="paragraph">Tangier <img src="plane-solid.svg" class="plane" alt="Plane Icon"> Istanbul</p>
+                </div>
+                <div class="div3">
+                    <p class="paragraph">From:</p>
+                    <h2 class="h2">$200</h2>
+                </div>
+            </div>
+
+        </button>
+        <button class="ticket">
+        <img src="https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg"  class="images">
+            <H2 class="h2">Paris</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">31 March -> 7 april</p>
+            <p class="paragraph">tangier <img src="plane-solid.svg" class="plane"> paris</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">96$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://www.fodors.com/wp-content/uploads/2023/06/0-HERO-istockphoto-1388018793.jpg"  class="images">
+            <H2 class="h2">Venice</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">10 april -> 20 april</p>
+            <p class="paragraph">CasaBlanca <img src="plane-solid.svg" class="plane"> Venice</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">200$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/640px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg"  class="images">
+            <H2 class="h2">Dubai</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">5 may -> 12 may</p>
+            <p class="paragraph">Istanbul <img src="plane-solid.svg" class="plane"> Dubai</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">295$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://content.r9cdn.net/rimg/dimg/7d/60/488863c5-city-35744-16935f1b104.jpg?crop=true&width=1366&height=768&xhint=1725&yhint=1010"  class="images">
+            <H2 class="h2">Riyad</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">1 april -> 7 april</p>
+            <p class="paragraph">Dubai <img src="plane-solid.svg" class="plane"> Riyad</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2>100$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://static.independent.co.uk/2021/10/08/17/iStock-516188849.jpg"  class="images">
+            <H2 class="h2">Amsterdam</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">2 april -> 10 april</p>
+            <p class="paragraph">Tangier <img src="plane-solid.svg" class="plane"> Amsterdam</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">250$</h2>
+            </div>
+            </div>
+        </button> 
+        <button class="ticket"><img src="https://cdn.generationvoyage.fr/2020/05/vue-de-nice.jpg"  class="images">
+            <H2 class="h2">Nice</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">8 juin -> 15 juin</p>
+            <p class="paragraph">venice <img src="plane-solid.svg" class="plane"> nice</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">150$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg"  class="images">
+            <H2 class="h2">Santorini</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">15 april -> 22 april</p>
+            <p class="paragraph">CasaBlanca <img src="plane-solid.svg" class="plane"> Santorini</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">350$</h2>
+            </div>
+            </div>
+        </button>
+        <button class="ticket">
+        <img src="https://tourscanner.com/blog/wp-content/uploads/2021/10/Choses-a-Faire-a-Marrakech.jpg"  class="images">
+            <H2 class="h2">Marackech</h2>
+            <div class="con2">
+            <div class="div2">
+            <p class="paragraph">7 april -> 12 april</p>
+            <p class="paragraph">tangier <img src="plane-solid.svg" class="plane"> Marackech</p>
+            </div>
+
+            <div class="div3">
+                <p class="paragraph">From :</p>
+                <h2 class="h2">40$</h2>
+            </div>
+            </div>
+        </button>
+        </div>
+       </form>
+       
     </section>
 </body>
 </html>

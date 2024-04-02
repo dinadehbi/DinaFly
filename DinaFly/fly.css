@@ -1,38 +1,53 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
+
 
 }
 body{
-    height: 300vh;
+    height: 200vh;
     width: 100vw;
-    background-image: url(https://t3.ftcdn.net/jpg/04/15/87/76/360_F_415877698_c1VY6BMnUbNxh7Or80VDZAWng4UoGfWi.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(230, 14, 14);
-
 }
+
 header{
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+}
+.links{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 a{
-    margin-right: 200px;
-    color: rgb(174, 248, 249);
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    border: 2px solid rgb(0, 89, 118);
+   padding: 10px;
+   border-radius: 5px;
+   background-color:  rgb(0, 89, 118);
+ 
+   
 }
 
 h1{
-    color: rgb(0, 0, 0);
+    color:  rgb(0, 89, 118);
     font-size: 50px;
     text-align: center;
+
 }
-p{
+.h2{
+    color:  rgb(0, 89, 118);
+    text-align: center;
+    font-size: 30px;
+
+}
+.paragraph{
     color: rgb(104, 104, 104);
 
 }
@@ -44,8 +59,6 @@ p{
     align-items: center;
 }
 .div1{
-    background-color: rgb(174, 248, 249);
-    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,89 +66,184 @@ p{
    
 
 }
-.section1 {
-    display: grid;
-    grid-template-columns: repeat(3, 0fr); /* 3 columns in each row */
-    gap: 0px 0px; /* Adjust the gap between items as needed */
-    height: 200vh;
-    width: 100vw;
-    justify-content: space-around; 
-    align-content: space-around; 
-
-}
-
-.ticket {
-    background-color: #f2f2f2;
-    text-align: center;
-    border-radius: 5px;
-    height: 350px; /* Fixed height for the ticket div */
-    width: 450px; /* Fixed width for the ticket div */
-  color: #f2f2f2;
-}
-.con{
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    height: 100px;
-    width:450px;
-
-}
-.con1{
-height: 80px;
-width: 200px;
-display: flex;
-flex-direction: column;
-justify-content: end;
-align-items: start;
-background-color: red;
-}
-.con2{
-    height: 80px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background-color: aqua;
-}
-.price{
-    color: rgb(43, 43, 43);
-}
-h4{
-  color: rgb(43, 43, 43);
-  position: relative;
-  top: 20px;
-  
-}
-
-/*
-.ticket {
-    text-align: center;
-    border-radius: 5px;
-    height: 300px;  
-    width: 450px;  
-  color: #f2f2f2;
-}
-.con{
-    height: 100px;
+.para{
+    width: 45%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    position: relative;
+    top: 40px;
+    height: auto;
+}
+.section1 {
+   height: 100vh;
+   width: 100%;
+}
+form{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
 
 }
+span{
+    text-align: center;
+}
 .con1{
-height: 100px;
-width: 100px;
-display: flex;
-flex-direction: column;
-justify-content: end;
+    height: 800px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 90px;
+     padding-top: 100px;
+     border-radius: 15px;  
+ 
 }
-.con2{
-    height: 50px;
-    width: 250px;
+.ticket{
+    height: 220px;
+    width: 80%;
+    border-radius: 15px;
+    background-color: white;
+    z-index: 1;
+    border: 2px solid black;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+
 }
-/*
+
+.images{
+    height: 125px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.con2{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    
+}
+.con3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgb(0, 89, 118);
+    margin-right: 100px;
+}
+.div2{
+    width: 50%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div3{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plane{
+height: 10px;
+width: 10px;
+position: relative;
+top: 2px;
+}
+.user{
+    height: 40px;
+    width: 40px;
+}
+.offre{
+    height: 80px;
+    width: 80px;
+}
+.res{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(179, 244, 255);
+    border-radius: 10px;
+}
+
+.session2{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
+
+}
+.payment{
+    background-color:  rgb(0, 89, 118);
+    height: 1000px;
+    width: 50%;
+
+}
+.ticket-info{
+    height: 1000px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con4{
+    height: 900px;
+    width: 50%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.span1{
+position: relative;
+left: 10%;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+.div5{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.para2{
+   display: inline;
+}
+.inline{
+    display: inline;
+}
+#container2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.div6{
+    height: 100px;
+    width: 50%;
+}
+.div7{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 10px;
+}
+.bagague{
+ margin-left: 10px;    
+}
+.link2{
+    color:  rgb(0, 89, 118);
+    border: none;
+    text-decoration: solid;
+    background-color: none;
+}
 
 
